@@ -55,3 +55,56 @@ String splitting methods:
 2.String[] split(String regex, int limit): Splits the string around matches of the given regular expression, up to the specified limit.
 
 These are some of the commonly used methods of the String class in Java. There are many more methods available for handling and manipulating strings in various ways.
+
+
+
+Charater Array
+==============
+
+Creating a Character Array:
+===========================
+
+char[] charArray = {'a', 'b', 'c', 'd'};: Declaring and initializing a character array.
+
+Converting a String to a Character Array:
+========================================
+String str = "Hello";
+char[] charArray = str.toCharArray();: Converts the string "Hello" to a character array.
+
+Accessing Elements:
+===================
+
+char ch = charArray[index];: Accesses the character at the specified index.
+
+Modifying Elements:
+===================
+charArray[index] = 'x';: Modifies the character at the specified index.
+
+Length of the Character Array:
+=============================
+int length = charArray.length;: Gets the number of characters in the array.
+
+Converting a Character Array to a String:
+==========================================
+String str = new String(charArray);: Converts the character array to a string.
+
+Copying a Character Array:
+==========================
+char[] copyArray = Arrays.copyOf(charArray, charArray.length);: Creates a copy of the original character array.
+Comparing Character Arrays:
+
+boolean isEqual = Arrays.equals(charArray1, charArray2);: Compares two character arrays for equality.
+
+Sorting Character Arrays:
+========================
+Arrays.sort(charArray);: Sorts the character array in ascending order.
+
+Searching in Character Arrays:
+==============================
+int index = Arrays.binarySearch(charArray, 'x');: Searches for a specific character in the sorted array using binary search.
+
+Filling Character Arrays:
+=========================
+Arrays.fill(charArray, 'x');: Fills the entire array with the specified character 'x'.
+
+These are some of the common methods and operations that can be performed on character arrays in Java. The java.util.Arrays class provides many utility methods for working with arrays, including character arrays.
